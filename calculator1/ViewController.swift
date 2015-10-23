@@ -20,6 +20,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    class MyButton: UIButton {
+        
+        override func drawRect(rect: CGRect) {
+            super.drawRect(rect)
+            self.layer.borderWidth=1
+            self.layer.borderColor = UIColor.blackColor().CGColor
+        }
+    }
 }
 
